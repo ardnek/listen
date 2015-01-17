@@ -1,12 +1,50 @@
 <!doctype html>
 <html>
-  <head>
-    <title></title>
-  </head>
-  <body>
-    <h1>kendra</h1>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/mustache/mustache.js"></script>
+<head>
+  <title>Listen</title>
+  <link rel="stylesheet" type="text/css" href="semantic.css">
+  <link rel="stylesheet" type="text/css" href="app.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
 
-  </body>
+  <div class="container">
+    <div class="ui segment">
+      <i class="fa fa-play"></i>
+    </div>
+    <div class="ui segment">
+      <i class="fa fa-play"></i>
+    </div>
+    <div class="ui segment">
+      <i class="fa fa-play"></i>
+    </div>
+    <div class="ui segment">
+      <i class="fa fa-play"></i>
+    </div>
+  </div>
+
+
+  <div id="main">
+    <section class="player">
+
+
+    </section>
+  </div>
+
+
+  <script type="text/template" id="tracksTemplate">
+    {{#tracks}}
+    <article>
+      <h2>{{title}}</h2>
+      {{artist}}
+      {{file}}    
+    </article>
+    {{/tracks}}
+  </script>
+
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/mustache/mustache.js"></script>
+  <script src="app.js" type="text/javascript" charset="utf-8"></script>
+</body>
 </html>
