@@ -8,43 +8,50 @@
 </head>
 <body>
 
-  <div class="container">
-    <div class="ui segment">
-      <i class="fa fa-play"></i>
-    </div>
-    <div class="ui segment">
-      <i class="fa fa-play"></i>
-    </div>
-    <div class="ui segment">
-      <i class="fa fa-play"></i>
-    </div>
-    <div class="ui segment">
-      <i class="fa fa-play"></i>
-    </div>
-  </div>
+  <!-- <div class="container">
+  <div class="ui segment">
+  <i class="fa fa-play"></i>
+</div>
+<div class="ui segment">
+<i class="fa fa-play"></i>
+</div>
+<div class="ui segment">
+<i class="fa fa-play"></i>
+</div>
+<div class="ui segment">
+<i class="fa fa-play"></i>
+</div>
+</div> -->
 
 
-  <div id="main">
-    <section class="player">
+<div id="main">
+  <section class="player">
 
 
-    </section>
-  </div>
+  </section>
+</div>
 
 
+<div class="container">
   <script type="text/template" id="tracksTemplate">
     {{#tracks}}
-    <article>
-      <h2>{{title}}</h2>
-      {{artist}}
-      {{file}}    
-    </article>
+    <div class="ui segment">
+      <article>
+        <h2>
+          <i class="fa fa-play"></i>
+          {{title}} by {{artist}}
+        </h2>
+        <!-- {{file}} -->
+      </article>
+    </div>
     {{/tracks}}
   </script>
+</div>
 
 
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/mustache/mustache.js"></script>
-  <script src="app.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/mustache/mustache.js"></script>
+<script src="app.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
