@@ -20,6 +20,4 @@ $('.container').on('click', '.fa-pause', function() {
     $('.player').html(newHTML);
   });
 
-
-
 });
