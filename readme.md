@@ -1,3 +1,9 @@
+Find Listen player live at:
+http://development.listen-ardnek.divshot.io/
+
+Used demo as reference:
+http://development.listen.divshot.io/
+
 # jQuery
 
 * Include jQuery from [CDN](https://cdnjs.com/libraries/jquery/)
