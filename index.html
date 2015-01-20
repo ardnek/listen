@@ -2,15 +2,22 @@
 <html>
 <head>
   <title>Listen</title>
-  <link rel="stylesheet" type="text/css" href="semantic.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/semantic-ui/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="app.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- <div class="container">
-  <div class="ui segment">
-  <i class="fa fa-play"></i>
+  <div class = "container">
+
+    <!-- Header -->
+    <header class="playerHeader">
+      <h2>Select a song!</h2>
+    </header>
+
+<!-- <div class="container">
+<div class="ui segment">
+<i class="fa fa-play"></i>
 </div>
 <div class="ui segment">
 <i class="fa fa-play"></i>
@@ -23,7 +30,7 @@
 </div>
 </div> -->
 
-
+<!-- Main -->
 <div id="main">
   <section class="player">
 
@@ -31,23 +38,34 @@
   </section>
 </div>
 
-
-<div class="container">
-  <script type="text/template" id="tracksTemplate">
-    {{#tracks}}
+<script type="text/template" id="tracksTemplate">
+  {{#tracks}}
+  <article>
     <div class="ui segment">
-      <article>
-        <h2>
-          <i class="fa fa-play"></i>
-          {{title}} by {{artist}}
-        </h2>
-        <!-- {{file}} -->
-      </article>
+      <h2>
+        <i class="fa fa-play"></i>
+        {{title}} by {{artist}}
+      </h2>
+      <audio src="tracks/{{file}}.mp3" preload='none'></audio>
     </div>
-    {{/tracks}}
-  </script>
-</div>
+  </article>
+  {{/tracks}}
+</script>
 
+
+
+<!-- <script type="text/template" id="tracksTemplate">
+{{#tracks}}
+<article>
+<h2>{{title}}</h2>
+{{artist}}
+{{file}}
+</article>
+{{/tracks}}
+</script> -->
+
+
+</div>
 
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
